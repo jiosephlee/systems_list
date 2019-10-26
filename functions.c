@@ -7,7 +7,7 @@ struct node {
 void print_list(struct node * p){
   printf("[");
   while(p != NULL){
-    if (p->next == 0){
+    if (p->next == NULL){
       printf("%d", p->i);
       p = p->next;
     } else{
