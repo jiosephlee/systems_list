@@ -6,7 +6,10 @@ main.o: main.c headers.h
 
 functions.o: functions.c headers.h
 	gcc -c functions.c
+
 run:
 	./program
 debug: main.c functions.c headers.h
 	gcc -g main.c functions.c
+gdb:
+	gdb a.out
