@@ -6,7 +6,7 @@
 
 int main() {
 
-  struct node *list;
+  struct node *list = NULL;
   int i;
 
   printf("\nInitial List <empty>\n");
