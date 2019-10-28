@@ -12,4 +12,6 @@ run:
 debug: main.c functions.c headers.h
 	gcc -g main.c functions.c
 gdb:
-	gdb a.out
+	gdb ./a.out
+valgrind:
+	valgrind ./a.out
