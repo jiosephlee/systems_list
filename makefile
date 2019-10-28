@@ -6,7 +6,9 @@ main.o: main.c headers.h
 
 functions.o: functions.c headers.h
 	gcc -c functions.c
-
+clean:
+	rm *.o
+	rm *~
 run:
 	./program
 debug: main.c functions.c headers.h
